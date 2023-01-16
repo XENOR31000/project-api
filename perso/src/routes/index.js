@@ -1,10 +1,10 @@
-import express from "express";
-
+import express, { Router } from "express";
+import modelRoutes from "./models";
 import usersRoutes from "./users";
 
 const router = express.Router();
 
-
+router.use(modelRoutes)
 
 router.use(usersRoutes);
 
