@@ -25,6 +25,6 @@ const enginemodelschema = new mongoose.Schema({
     
   });
   
-  const EngineModels = mongoose.model("Models", enginemodelschema);
+  const Engine = mongoose.model("Engine", enginemodelschema);
   
-  export default EngineModels;
+  export default Engine;
